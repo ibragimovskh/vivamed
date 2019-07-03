@@ -1,0 +1,39 @@
+.header {
+    height: 100vh;
+
+    .logo {
+        img {
+            width: 130px;
+        }
+    }
+
+    .nav-link {
+        font-size: 1.5em;
+
+    }
+
+    .header__content {
+        height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+        background-image: url('../img/carousel-2.jpg');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        color: #000000;
+
+        &-title {
+            font-size: 2em;
+            font-weight: lighter;
+            color: #e74c3c;
+        }
+
+        &-text {
+            color: $wet-asphalt;
+            width: 60%;
+        }
+    }
+
+}

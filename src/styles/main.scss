@@ -1,0 +1,16 @@
+// DOCS
+@import './docs/bootstrap-reboot.scss';
+@import './docs/bootstrap.scss';
+@import './docs/owl.carousel.scss';
+@import './docs/owl.theme.default.scss';
+// COMPONENTS
+@import './components/var';
+@import './components/mixin';
+@import './components/btn';
+@import './components/header';
+@import './components/section';
+@import './components/footer';
+
+:root {
+    font-family: "Montserrat", "Roboto", Arial, sans-serif;
+}
