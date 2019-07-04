@@ -1,3 +1,9 @@
 .footer {
     background-color: $wet-asphalt;
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        color: #ffffff;
+    }
 }
