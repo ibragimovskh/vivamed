@@ -13,6 +13,7 @@ import rigger from "gulp-rigger";
 import del from "del";
 import browserSync from "browser-sync";
 import autoprefixer from "gulp-autoprefixer";
+import browserify from "gulp-browserify";
 // Instead of BrowserSync.reload
 let { reload } = browserSync;
 let path = {
@@ -83,6 +84,7 @@ let styles = () => {
 let scripts = () => {
   return src(path.scripts.src)
     .pipe(plumber())
+    .pipe(browserify())
     .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(sourcemaps.write())
